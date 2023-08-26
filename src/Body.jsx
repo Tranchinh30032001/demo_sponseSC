@@ -53,7 +53,7 @@ function Body() {
                     <img src = "https://d1i707o6seb2vk.cloudfront.net/public/images/202308/MicrosoftTeams-image-2-1024x728_2792942161.jpg" />
                 </div>
                 <div>
-                    <h1 className='font-bold text-[30px] leading-[52px] tracking-[0.2px] mt-[32px] font-[""]'>THE GREENHOUSE | 1:1 Start-up & VCs Pitching</h1>
+                    <h1 className='font-bold text-[30px] leading-[52px] tracking-[0.2px] mt-[32px] font-["roboto"]'>THE GREENHOUSE | 1:1 Start-up & VCs Pitching</h1>
                     <div className='mt-1' >
                         <div className='flex items-center' >
                             <Icon className='h-[14px]' icon="zmdi:alarm-check" />
