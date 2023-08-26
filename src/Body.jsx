@@ -54,8 +54,8 @@ function Body() {
                 </div>
                 <div>
                     <h1 className='font-bold text-[30px] leading-[52px] tracking-[0.2px] mt-[32px] font-["roboto"]'>THE GREENHOUSE | 1:1 Start-up & VCs Pitching</h1>
-                    <div className='mt-1' >
-                        <div className='flex items-center' >
+                    <div className='mt-[1px]' >
+                        <div className='flex items-center text-[#333]' >
                             <Icon className='h-[14px]' icon="zmdi:alarm-check" />
                             <p className='mx-1' >2023-08-16 16:54</p>
                             <Icon className='h-[12px]' icon="zmdi:account" />
@@ -64,7 +64,7 @@ function Body() {
                             <p>335 Likes</p>
                         </div>
                     </div>
-                    <p className='font-light text-[18px] leading-[30px] tracking-[0.2px] text-[#666] mt-4 font-["roboto"]' >
+                    <p className='font-light text-[18px] leading-[30px] tracking-[0.2px] text-[#666] mt-[14px] font-["roboto"]' >
                         The program will feature a 1:1 pitching session with top VCs, as well as networking opportunities with other founders and mentors. To apply, startups must submit a proposal by 8th August, 2023. The Greenhouse team will work with VCs to select startups to participate in the program.
                     </p>
                 </div>
