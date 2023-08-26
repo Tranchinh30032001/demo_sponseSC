@@ -16,7 +16,8 @@ function Body() {
             setWallet(wallet);
             await wallet.startUp();
         }
-        if(wallet?.accountId !== undefined) {
+        if(wallet?.accountId !== undefined && !localStorage.getItem("active") ) {
+            console.log("wallet", wallet)
             const sponse = async() => {
                 const amount = utils.format.parseNearAmount("100")
                 await wallet.callMethod({
@@ -27,10 +28,12 @@ function Body() {
                     gas: "200000000000000"
                 })
             }
+            localStorage.setItem("active", true)
             sponse();
         }
         loadWallet();
     }, [wallet?.accountId])
+
   const handleClick = async() => {
     if(!accountId){
         setIsModal(true);
