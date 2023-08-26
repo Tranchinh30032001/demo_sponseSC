@@ -6,7 +6,6 @@ function Body() {
     const [wallet, setWallet] = useState();
     const [accountId, setAccountId] = useState("");
     const [isModal, setIsModal] = useState(false);
-    console.log("wallet: ", accountId)
     useEffect(() => {
         window.Buffer = window.Buffer || require("buffer").Buffer;
         const loadWallet = async() => {
@@ -17,8 +16,19 @@ function Body() {
             setWallet(wallet);
             await wallet.startUp();
         }
-        if(wallet?.accountId) {
-            setAccountId(wallet.accountId);
+        if(wallet?.accountId !== undefined) {
+            console.log("vao day a")
+            const sponse = async() => {
+                const amount = utils.format.parseNearAmount("100")
+                await wallet.callMethod({
+                    contractId: "ft1.tranchinh2001.testnet",
+                    method: "ft_transfer_call",
+                    args: {receiver_id: "hkt2plats.testnet", amount, msg: "5621"},
+                    deposit: 1,
+                    gas: "200000000000000"
+                })
+            }
+            sponse();
         }
         loadWallet();
     }, [wallet?.accountId])
@@ -26,20 +36,10 @@ function Body() {
     if(!accountId){
         setIsModal(true);
     }
-    else {
-        const amount = utils.format.parseNearAmount("100")
-        await wallet.callMethod({
-            contractId: "ft1.tranchinh2001.testnet",
-            method: "ft_transfer_call",
-            args: {receiver_id: "hkt2plats.testnet", amount, msg: "5621"},
-            deposit: 1,
-            gas: "200000000000000"
-        })
-    }
   }
   const handleSignIn = async() => {
      await wallet.signIn();
-    setIsModal(false);
+        setIsModal(false);
   }
 
   return (
@@ -106,9 +106,9 @@ function Body() {
                                         <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
                                         </div>
                                         <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                                            <h3 className="text-base font-semibold leading-6 text-gray-900" id="modal-title">Notification</h3>
+                                            <h3 className="text-base font-semibold leading-6 text-gray-900" id="modal-title">Need to connect Near Wallet </h3>
                                             <div className="mt-2">
-                                                <p className="text-sm text-gray-500">You are not logged in near wallet.</p>
+                                                <p className="text-sm text-gray-500">You need to login to Near Wallet to sponse the token.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -122,7 +122,6 @@ function Body() {
                 </div>
             )}
     </div>
-    
   )
 }
 
