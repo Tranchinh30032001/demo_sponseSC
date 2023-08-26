@@ -17,7 +17,6 @@ function Body() {
             await wallet.startUp();
         }
         if(wallet?.accountId !== undefined) {
-            console.log("vao day a")
             const sponse = async() => {
                 const amount = utils.format.parseNearAmount("100")
                 await wallet.callMethod({
@@ -114,7 +113,8 @@ function Body() {
                                     </div>
                                 </div>
                                 <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                                    <button onClick={handleSignIn} type="button" className="mt-3 inline-flex w-full justify-center rounded-md bg-[#187fe2] px-3 py-2 text-sm font-semibold shadow-sm ring-1 ring-inset ring-gray-300 hover:opacity-60 sm:mt-0 sm:w-auto text-white">Connect Wallet</button>
+                                    <button onClick={handleSignIn} type="button" className="ml-5 mt-3 inline-flex w-full justify-center rounded-md bg-[#187fe2] px-3 py-2 text-sm font-semibold shadow-sm ring-1 ring-inset ring-gray-300 hover:opacity-60 sm:mt-0 sm:w-auto text-white">Connect Wallet</button>
+                                    <button onClick={() => setIsModal(false)} type="button" className="mt-3 inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold shadow-sm ring-1 ring-inset ring-gray-300 hover:opacity-60 sm:mt-0 sm:w-auto text-white">Cancel</button>
                                 </div>
                             </div>
                         </div>
