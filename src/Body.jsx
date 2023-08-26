@@ -50,10 +50,10 @@ function Body() {
         <div className='flex gap-[55px]' >
             <div className='flex-[0.667] mt-[15px]' >
                 <div className='pt-[20px]' >
-                    <img src = "https://d1i707o6seb2vk.cloudfront.net/public/images/202308/MicrosoftTeams-image-2-1024x728_2792942161.jpg" />
+                    <img src = "https://d1i707o6seb2vk.cloudfront.net/public/images/202308/MicrosoftTeams-image-1-1024x576_9916276891.png" />
                 </div>
                 <div>
-                    <h1 className='font-bold text-[30px] leading-[52px] tracking-[0.2px] mt-[32px] font-["roboto"]'>THE GREENHOUSE | 1:1 Start-up & VCs Pitching</h1>
+                    <h1 className='font-bold text-[30px] leading-[52px] tracking-[0.2px] mt-[32px] font-["roboto"]'>HACK THE FUTURE | Web3 Hackfest</h1>
                     <div className='mt-[1px]' >
                         <div className='flex items-center text-[#333]' >
                             <Icon className='h-[14px]' icon="zmdi:alarm-check" />
@@ -65,7 +65,7 @@ function Body() {
                         </div>
                     </div>
                     <p className='font-light text-[18px] leading-[30px] tracking-[0.2px] text-[#666] mt-[14px] font-["roboto"]' >
-                        The program will feature a 1:1 pitching session with top VCs, as well as networking opportunities with other founders and mentors. To apply, startups must submit a proposal by 8th August, 2023. The Greenhouse team will work with VCs to select startups to participate in the program.
+                        The online hackathon will take place from July 17, 2023 to September 10, 2023. Participants will have access to a wide range of resources, including mentors, workshops, and tutorials. The top teams will be awarded prizes, including cash, scholarships, and hardware.
                     </p>
                 </div>
             </div>
@@ -73,8 +73,8 @@ function Body() {
                 <div className='px-[30px] py-[20px] shadow rounded-xl' >
                     <h1 className='pt-[29px] text-left text-[#111343] leading-5 text-[30px]' >Sponsor</h1>
                     <div>
-                        <h2 className='pt-[27px] text-[17px] font-bold text-left' >Cardano event</h2>
-                        <p className='min-h-[100px] max-h-[150px] overflow-auto text-[#333] py-[3px] leading-[20px] font-normal' >The program will feature a 1:1 pitching session with top VCs, as well as networking opportunities with other founders and mentors.</p>
+                        <h2 className='pt-[27px] text-[17px] font-bold text-left' >Sponsor Demo 1</h2>
+                        <p className='mb-1 min-h-[100px] max-h-[150px] overflow-auto text-[#333] py-[3px] leading-[20px] font-normal' >Discover the latest advancements in blockchain technology and experience the power of multi-chain decentralized applications (dApps) designed for APAC users, with a special focus on Vietnam – Top 1 crypto adoption in the global.</p>
                     </div>
                     <div className='p-[10px] bg-[#ffe0f6] rounded-[10px] -mt-[2px]' >
                         <div>
