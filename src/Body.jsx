@@ -78,12 +78,12 @@ function Body() {
                     </div>
                     <div className='p-[10px] bg-[#ffe0f6] rounded-[10px] -mt-[2px]' >
                         <div>
-                            <p className='pt-[5px] leading-[20px] text-[#333] text-left font-normal text-[16px]' >Reward: $100</p>
-                            <p className='pt-[5px] leading-[20px] text-[#333] text-left font-normal text-[16px]'>Bonus: $0</p>
+                            <p className='pt-[5px] leading-[20px] text-[#333] text-left font-normal text-[16px]' >Reward: 100 NEAR</p>
+                            <p className='pt-[5px] leading-[20px] text-[#333] text-left font-normal text-[16px]'>Bonus: 0 NEAR</p>
                         </div>
                         <hr className='m-[10px] border-t-[1px] border-[#0000001a]' />
                         <div>
-                            <p className='pt-[5px] leading-[20px] text-[#333] text-left font-normal text-[16px]'>Total: $100</p>
+                            <p className='pt-[5px] leading-[20px] text-[#333] text-left font-normal text-[16px]'>Total: 100 NEAR</p>
                         </div>
                     </div>
                     <div className='mt-[10px] rounded-[5px] border-[1px] border-[#D1D1D1] flex items-center justify-center gap-[4px]' >
